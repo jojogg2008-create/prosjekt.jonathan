@@ -1,8 +1,33 @@
-.navbar{
-    height: 20vh;
+.navbar {
+    height: 15vh;
     display: flex;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    justify-content: space-between;
+    align-items: center;            
+    width: 100%;
+    
+
+    /* 👇 Dette fikser den brutale kanten */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 70%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        black 70%,
+        transparent 100%
+    );
 }
 
-.navbar div{
-    
+.nav1{
+    padding-left: 50px;
 }
+
+.nav2{
+    padding-right: 50px;
+}
+
