@@ -1,12 +1,13 @@
 .navbar {
     height: 15vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     position: fixed;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
-    justify-content: space-between;
-    align-items: center;            
+              
     width: 100%;
     
 
@@ -29,5 +30,7 @@
 
 .nav2{
     padding-right: 50px;
+    display: flex;
+    
 }
 
