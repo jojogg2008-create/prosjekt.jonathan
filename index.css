@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,12 +13,30 @@ img{
     width: 100%;
 }
 
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+h1{
+    font-family: 'Outfit', sans-serif;
+}
 
 
 .section1{
     height: 100vh;
-    background-image: url(images/forside.png);
+    background-image: url(images/fjell.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.boks{
+    width: 500px;
+    height: 500px;
+    background-color: white;
 }
