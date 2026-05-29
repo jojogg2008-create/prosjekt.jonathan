@@ -47,7 +47,11 @@ h1 {
     border-radius: 50px;
     margin-top: 1250px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    box-shadow: 10px 10px 5px rgb(54, 54, 54);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -67,6 +71,16 @@ h1 {
     text-align: center;
 }
 
-.boks h1{
-    margin-top: 40;
+.boks h2{
+    padding: 30px;
+
+}
+
+.boks p{
+    padding-bottom: 30px;
+    max-width: 400px;
+}
+
+.boks ol{ 
+    max-width: 400px;
 }
