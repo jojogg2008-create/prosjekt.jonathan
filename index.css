@@ -42,7 +42,7 @@ h1 {
 
 .boks {
     width: 500px;
-    height: 500px;
+    height: 700px;
     background-color: white;
     border-radius: 50px;
     margin-top: 1250px;
@@ -83,4 +83,12 @@ h1 {
 
 .boks ol{ 
     max-width: 400px;
+}
+
+.dest{
+    padding-top: 70px;
+}
+
+.dest h1{
+    text-decoration: underline ;
 }
