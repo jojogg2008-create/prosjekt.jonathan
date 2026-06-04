@@ -1,3 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+img{
+    width: 100%;
+    display: block;
+}
 .navbar {
     height: 90px;
     width: 100%;
