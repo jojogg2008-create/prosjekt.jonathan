@@ -1,0 +1,65 @@
+.destination-hero{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hemsedal-hero{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
+        url("images/hemsedal.png");
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.title h1{
+    font-size: 90px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.title p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.info{
+    padding: 80px 150px;
+    background: white;
+    color: black;
+}
+
+.info h2{
+    font-size: 40px;
+}
+
+.info p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#lesMerBtn{
+    margin-top: 20px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #1f5f99;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.vurdering{
+
+}
+
+.vurdering h1{
+    text-transform: uppercase;
+}

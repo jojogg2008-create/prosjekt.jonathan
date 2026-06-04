@@ -9,21 +9,63 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav1">
+                <a href="index.html">SKI-GUIDEN</a>
+            </div>
 
-    <div class="nav-content">
-
-        <div class="nav1">
-            <a href="index.html">SKI-GUIDEN</a>
+            <div class="nav2">
+                <a href="hemsedal.html">Hemsedal</a>
+                <a href="trysil.html">Trysil</a>
+                <a href="geilo.html">Geilo</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="nav2">
-            <a href="hemsedal.html">Hemsedal</a>
-            <a href="trysil.html">Trysil</a>
-            <a href="geilo.html">Geilo</a>
-        </div>
+    <main>
+        <section class="destination-hero hemsedal-hero">
+            <div class="title">
+                <h1>Hemsedal</h1>
+                <p>Norges alper</p>
+            </div>
+        </section>
 
-    </div>
+        <section class="info">
+            <h2>Hvorfor velge Hemsedal?</h2>
 
-</nav>
+            <p>
+                Hemsedal er et av Norges mest populære skidestinasjoner, kjent for store fjell,
+                mange bakker og god stemning.
+            </p>
+
+            <p id="p">
+                Skisenteret passer godt for både ungdom og voksne som liker fart,
+                variasjon og afterski. Det kan være litt dyrt, men opplevelsen er veldig bra.
+            </p>
+
+            <button id="lesMerBtn">Les mer</button>
+
+        </section>
+        <section class="vurdering">
+            <h1>gi hemsedal en vurdering:</h1>
+        </section>
+    </main>
+
+    <script>
+        const btn = document.getElementById("lesMerBtn");
+        const p = document.getElementById("p");
+
+        p.style.display = "none";
+
+        btn.addEventListener("click", function () {
+            if (p.style.display === "none") {
+                p.style.display = "block";
+                btn.innerHTML = "Les mindre";
+            } else {
+                p.style.display = "none";
+                btn.innerHTML = "Les mer";
+            }
+        });
+    </script>
 </body>
-</html>
+</html> 
