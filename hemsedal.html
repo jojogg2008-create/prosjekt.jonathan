@@ -23,10 +23,10 @@
     </nav>
 
     <main>
-        <section class="destination-hero hemsedal-hero">
+        <section class="destination hemsedal">
             <div class="title">
                 <h1>Hemsedal</h1>
-                <p>Skandinavias apler</p>
+                <p>Skandinavias alper</p>
             </div>
         </section>
 
@@ -43,7 +43,18 @@
                 variasjon og afterski. Det kan være litt dyrt, men opplevelsen er veldig bra.
             </p>
 
+
             <button id="lesMerBtn">Les mer</button>
+
+            <div class="bakker">
+                <div>
+                 <h2>Vilt og vakkert:</h2>
+            <p>Slik ser gjerne hemsedal ut på en solfylt dag i februar.</p>
+            </div>
+            <img id="breidalen" src="images/breidalen.png" alt="">
+            </div>
+            
+           
 
         </section>
         <section class="vurdering">
@@ -55,7 +66,12 @@
                 <span>4</span>
                 <span>5</span>
             </div>
+            <textarea name="" id=""></textarea>
             <button id="rating-btn">send inn</button>
+        </section>
+
+        <section class="svar">
+            <h2><span>Takk</span> for at du ga Hemsedal en vurdering!</h2>
         </section>
     </main>
 
@@ -74,14 +90,32 @@
                 btn.innerHTML = "Les mer";
             }
         });
+
+
         const allSpans = document.querySelectorAll(".rating span")
         console.log(allSpans)
         let ratingTall = 0
 
         allSpans.forEach(Element=>{
             Element.addEventListener("click", function(){
+                fjernactive()
+                Element.classList.add("active")
+                ratingTall = Element.textContent
                 
             })
+        })
+
+        function fjernactive(){
+            allSpans.forEach(Element=>{
+                Element.classList.remove("active")
+            })
+
+        }
+
+        document.querySelector("#rating-btn").addEventListener("click", function(){
+            document.querySelector(".vurdering").style.display="none";
+            document.querySelector(".svar").style.display="flex"
+            console.log("hei")
         })
 
     </script>
