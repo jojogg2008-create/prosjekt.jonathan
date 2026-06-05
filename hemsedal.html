@@ -49,7 +49,7 @@
             <div class="bakker">
                 <div>
                  <h2>Vilt og vakkert:</h2>
-            <p>Slik ser gjerne hemsedal ut på en solfylt dag i februar.</p>
+            <p>Slik ser gjerne Hemsedal ut på en solfylt dag i februar.</p>
             </div>
             <img id="breidalen" src="images/breidalen.png" alt="">
             </div>
@@ -58,7 +58,7 @@
 
         </section>
         <section class="vurdering">
-            <h1>gi hemsedal en vurdering:</h1>
+            <h1>gi Hemsedal en vurdering:</h1>
             <div class="rating">
                 <span>1</span>
                 <span>2</span>
@@ -66,61 +66,19 @@
                 <span>4</span>
                 <span>5</span>
             </div>
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="inputfelt"></textarea>
             <button id="rating-btn">send inn</button>
         </section>
 
         <section class="svar">
             <h2><span>Takk</span> for at du ga Hemsedal en vurdering!</h2>
-            <h3>du ga hemsedal <span id="ratingTall">x</span> av 5.</h3>
+            <h3>du ga Hemsedal <span id="ratingTall">x</span> av 5, og skrev: <span id="textspan">x</span></h3>
             
         </section>
     </main>
+    <div class="banner"></div>
 
-    <script>
-        const btn = document.getElementById("lesMerBtn");
-        const p = document.getElementById("p");
-
-        p.style.display = "none";
-
-        btn.addEventListener("click", function () {
-            if (p.style.display == "none") {
-                p.style.display = "block";
-                btn.innerHTML = "Les mindre";
-            } else {
-                p.style.display = "none";
-                btn.innerHTML = "Les mer";
-            }
-        });
-
-
-        const allSpans = document.querySelectorAll(".rating span")
-        console.log(allSpans)
-        let ratingTall = 0
-
-        allSpans.forEach(Element=>{
-            Element.addEventListener("click", function(){
-                fjernactive()
-                Element.classList.add("active")
-                ratingTall = Element.textContent
-                
-            })
-        })
-
-        function fjernactive(){
-            allSpans.forEach(Element=>{
-                Element.classList.remove("active")
-            })
-
-        }
-
-        document.querySelector("#rating-btn").addEventListener("click", function(){
-            document.querySelector(".vurdering").style.display="none";
-            document.querySelector(".svar").style.display="flex"
-            console.log("hei")
-            document.getElementById("ratingTall").innerHTML = ratingTall
-        })
-
-    </script>
+    <script src="hemsedal.js"></script>
+    
 </body>
 </html> 
