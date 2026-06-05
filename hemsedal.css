@@ -143,11 +143,31 @@ textarea{
     background-color: #1f5f99;
  }
 
- .anmeldelse{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .anmeldelse {
     max-width: 1200px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
     flex-direction: column;
-    margin: auto;
- }
+    align-items: center;
+}
+
+.anmeldelse h2 {
+    color: #1f5f99;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.anmeldelse p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.anmeldelse h3 {
+    font-size: 32px;
+    color: #1f5f99;
+}
